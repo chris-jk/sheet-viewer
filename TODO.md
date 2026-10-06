@@ -4,7 +4,7 @@ Running tab. Current state at top, then next up, waiting-on, recently shipped. P
 
 ## Where things stand (2026-10-06)
 - First version, built and installed 2026-10-06: `~/Applications/Sheet Viewer.app` (id `com.chris.sheetviewer`). On Chris's Mac it is the default opener for CSV, TSV, Excel and Numbers files (`./build.sh --default`); Tablecruncher and the older Numbers to CSV app went to the Trash the same day.
-- Public repo, MIT: `chris-jk/sheet-viewer`. This commit is the first; the push follows it.
+- Public repo, MIT: https://github.com/chris-jk/sheet-viewer. `main` pushed 2026-10-06; the installed build matches it.
 - Scope, in Chris's words: view, sort, search, and "the simple stuff" for editing. His worry: "are we getting to the point of where we're going to make it heavy?" No formulas, charts or layout. A new feature should be a list operation or a display rule.
 - Checks: `SheetViewer --selftest` (build.sh runs it) and `SheetViewer --snapshot file out.png --do "…"`, which runs the real actions on an off-screen window and draws it to a PNG. Commands are listed above `run(script:)` in `main.swift`.
 - Not covered by those checks, and not yet tried by hand: the Export save panel, the alert sheets (close, reload, quit, add page, a link that is not a web page), and a real mouse click on a link.
